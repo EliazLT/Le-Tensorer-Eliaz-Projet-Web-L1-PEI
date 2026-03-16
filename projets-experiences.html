@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets et expériences | Mon CV en ligne</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body data-page="projets">
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="brand">
+                <span class="brand-title">Mon CV en ligne</span>
+                <span class="brand-subtitle">Le Tensorer Eliaz</span>
+            </div>
+
+            <input class="nav-toggle" type="checkbox" id="menu-mobile">
+            <label class="nav-label" for="menu-mobile">Menu</label>
+
+            <nav class="site-nav" aria-label="Navigation principale">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="lycee.html">Scolarité lycée</a></li>
+                    <li><a href="ensibs.html">Parcours ENSIBS</a></li>
+                    <li><a class="active" href="projets-experiences.html">Projets et expériences</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-card hero-content">
+                <p class="eyebrow">Portfolio</p>
+                <h1 class="page-title">Projets techniques et expériences</h1>
+                <p class="page-intro">
+                    Cette page présente deux projets réalisés dans le cadre de ma formation. Ils illustrent
+                    ma capacité à travailler en équipe, à comprendre un objectif technique et à transformer
+                    une idée ou un algorithme en solution fonctionnelle.
+                </p>
+
+                <div class="tag-list">
+                    <span class="tag">Micro:bit Kubii</span>
+                    <span class="tag">Lego NXT</span>
+                    <span class="tag">Programmation</span>
+                    <span class="tag">Travail en équipe</span>
+                </div>
+            </div>
+
+            <div class="hero-card hero-visual">
+                <img src="projet-nxt.png" alt="Illustration du projet Micro:bit">
+            </div>
+        </section>
+
+        <section class="project-grid section-spacing">
+            <article class="card project-card">
+                <h2 class="section-title">Projet 1 - Jeu sur puces Micro:bit Kubii</h2>
+                <p>
+                    Ce projet a été réalisé en duo et consistait à créer un jeu sur puces Micro:bit Kubii.
+                    Le choix s'est porté sur un jeu à deux joueurs, de type chat et souris, dans lequel
+                    deux cartes communiquent en temps réel par ondes radio.
+                </p>
+                <p>
+                    Le déplacement des joueurs s'effectuait grâce au gyroscope directionnel intégré à la carte.
+                </p>
+                <p><strong>Mon rôle :</strong> développer la communication entre les deux cartes.</p>
+                <p><strong>Compétences mobilisées :</strong> travail d'équipe, innovation, apprentissage pratique et prise en main d'un matériel inconnu à partir de sa documentation.</p>
+                <p><strong>Résultat :</strong> un jeu fonctionnel en temps réel, sans bug.</p>
+            </article>
+
+            <article class="card project-card">
+                <h2 class="section-title">Projet 2 - Robot autonome avec Lego NXT</h2>
+                <p>
+                    Ce projet a été réalisé en groupe de cinq. Il consistait à programmer un robot autonome
+                    à partir d'une brique de commande Lego NXT.
+                </p>
+                <p>
+                    L'objectif était de faire avancer le robot vers une source lumineuse tout en évitant
+                    les obstacles présents sur sa route.
+                </p>
+                <p><strong>Mon rôle :</strong> traduire l'algorithme de déplacement du robot en un code fonctionnel.</p>
+                <p><strong>Compétences mobilisées :</strong> communication, travail en groupe, adaptation et structuration logique.</p>
+                <p><strong>Résultat :</strong> un robot capable de se diriger vers la source de lumière.</p>
+            </article>
+
+            <article class="card project-card list-block">
+                <h2 class="section-title">Ce que ces projets montrent</h2>
+                <ul>
+                    <li>Capacité à apprendre rapidement un nouvel environnement technique.</li>
+                    <li>Participation concrète à un projet collectif.</li>
+                    <li>Rôle technique identifiable et explicable à l'oral.</li>
+                    <li>Résultats observables et testables.</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="grid-two section-spacing">
+            <article class="panel">
+                <h2 class="section-title">Visuel interactif du portfolio</h2>
+                <figure class="project-figure">
+                    <img id="project-showcase-image" src="projet-microbit.png" alt="Illustration principale du projet">
+                    <figcaption id="project-showcase-caption">Projet Micro:bit Kubii - illustration du matériel utilisé.</figcaption>
+                </figure>
+
+                <div class="project-switches section-spacing">
+                    <button class="project-switch is-selected"
+                            data-image="projet-microbit.png"
+                            data-caption="Projet Micro:bit Kubii - illustration du matériel utilisé."
+                            data-alt="Illustration du projet Micro:bit">
+                        Afficher le projet Micro:bit
+                    </button>
+
+                    <button class="project-switch"
+                            data-image="projet-nxt.png"
+                            data-caption="Projet Lego NXT - illustration du robot autonome."
+                            data-alt="Illustration du projet Lego NXT">
+                        Afficher le projet Lego NXT
+                    </button>
+                </div>
+            </article>
+
+            <article class="panel list-block">
+                <h2 class="section-title">Méthode de travail</h2>
+                <ol>
+                    <li>Comprendre le matériel et ses contraintes.</li>
+                    <li>Définir un objectif clair pour le prototype.</li>
+                    <li>Répartir les rôles dans l'équipe.</li>
+                    <li>Développer, tester et corriger le comportement du système.</li>
+                    <li>Valider le résultat final en situation réelle.</li>
+                </ol>
+            </article>
+        </section>
+
+        <section class="table-card section-spacing">
+            <h2 class="section-title">Comparaison des deux projets</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Projet</th>
+                            <th>Équipe</th>
+                            <th>Rôle personnel</th>
+                            <th>Compétences</th>
+                            <th>Résultat</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jeu sur puces Micro:bit Kubii</td>
+                            <td>Duo</td>
+                            <td>Communication radio entre cartes</td>
+                            <td>Travail d'équipe, innovation, autonomie</td>
+                            <td>Jeu temps réel fonctionnel</td>
+                        </tr>
+                        <tr>
+                            <td>Robot autonome Lego NXT</td>
+                            <td>Groupe de 5</td>
+                            <td>Traduction de l'algorithme en code</td>
+                            <td>Communication, logique, coopération</td>
+                            <td>Robot guidé par la lumière</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p class="footer-note">Page dédiée aux projets et aux expériences techniques.</p>
+            <p class="footer-note">Année <span id="footer-year"></span> - <span class="accent-text">Projet Web ENSIBS</span></p>
+        </div>
+    </footer>
+</body>
+</html>
